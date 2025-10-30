@@ -1,15 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.scss";
+import styles from "./layout.module.scss";
+import cn from "classnames";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+import localFont from "next/font/local";
+
+const ntsomic = localFont({
+  variable: "--font-ntsomic",
+  src: [
+    { path: "../../public/fonts/NTSomic-Regular.woff2", weight: "400" },
+    { path: "../../public/fonts/NTSomic-Regular.woff", weight: "400" },
+    { path: "../../public/fonts/NTSomic-Medium.woff2", weight: "500" },
+    { path: "../../public/fonts/NTSomic-Medium.woff", weight: "500" },
+    { path: "../../public/fonts/NTSomic-Semibold.woff2", weight: "600" },
+    { path: "../../public/fonts/NTSomic-Semibold.woff", weight: "600" },
+    { path: "../../public/fonts/NTSomic-Bold.woff2", weight: "700" },
+    { path: "../../public/fonts/NTSomic-Bold.woff", weight: "700" },
+  ],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const patsySans = localFont({
+  variable: "--font-patsysans",
+  src: [
+    { path: "../../public/fonts/PatsySansRegular.woff2", weight: "400" },
+    { path: "../../public/fonts/PatsySansRegular.woff", weight: "400" },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -24,9 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={cn(`${ntsomic.variable} ${patsySans.variable}`, styles.container)}>{children}</body>
     </html>
   );
 }

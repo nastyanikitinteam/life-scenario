@@ -1,0 +1,9 @@
+@use "../styles/variables" as *;
+
+.container {
+  min-height: 100dvh;
+  background-image: url(../../public/images/home/back.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: $white;
+}
