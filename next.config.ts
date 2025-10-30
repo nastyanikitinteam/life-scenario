@@ -7,13 +7,7 @@ const nextConfig: NextConfig = {
       use: [
         {
           loader: "@svgr/webpack",
-          options: {
-            icon: true,
-            prettier: true,
-            svgo: true,
-            titleProp: true,
-            ref: true,
-          },
+          options: {},
         },
       ],
     });

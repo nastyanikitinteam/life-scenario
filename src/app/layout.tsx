@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import "../styles/globals.scss";
-import styles from "./layout.module.scss";
+import localFont from "next/font/local";
 import cn from "classnames";
 
-import localFont from "next/font/local";
+import Header from "@/components/layouts/header/Header";
+
+import "../styles/globals.scss";
+import styles from "./layout.module.scss";
 
 const ntsomic = localFont({
   variable: "--font-ntsomic",
@@ -39,7 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(`${ntsomic.variable} ${patsySans.variable}`, styles.container)}>{children}</body>
+      <body className={cn(`${ntsomic.variable} ${patsySans.variable}`, styles.container)}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

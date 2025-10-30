@@ -1,5 +1,5 @@
-$font-family-base: "--font-ntsomic";
-$font-family-secondary: "--font-patsysans";
+$font-family-base: var(--font-ntsomic);
+$font-family-secondary: var(--font-patsysans);
 
 $white: #ffffff;
 $text-primary: #454660;
