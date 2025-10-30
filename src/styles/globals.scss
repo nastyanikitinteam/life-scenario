@@ -19,8 +19,15 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 87.5rem;
+  width: 100%;
+  padding: 0 2.5rem;
+  margin: 0 auto;
 }

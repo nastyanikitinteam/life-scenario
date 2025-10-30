@@ -8,7 +8,7 @@ import HowToPlayIcon from "@images/icons/how-to-play.svg";
 export const navItems: NavItem[] = [
   {
     label: "Play Zone",
-    href: "/play",
+    href: "/play-zone",
     icon: <PlayZoneIcon />,
   },
   {
