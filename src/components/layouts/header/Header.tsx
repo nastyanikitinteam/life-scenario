@@ -9,7 +9,7 @@ import type { NavItem } from "@/types/nav";
 import { navItems } from "@/config/nav";
 
 import Logo from "@images/home/logo.svg";
-import AvatarIcon from "@images/avatar.png";
+import avatarIcon from "@images/avatar.png";
 import NotificationIcon from "@images/icons/notification.svg";
 
 import styles from "./header.module.scss";
@@ -45,7 +45,7 @@ export default function Header() {
               {NEW_NOTIFICATION && <span className={styles.notificationDot}></span>}
             </button>
             <button type="button" className={styles.avatar}>
-              <Image src={AvatarIcon} alt="avatar" width={60} height={60} />
+              <Image src={avatarIcon} alt="avatar" width={60} height={60} />
             </button>
           </div>
         </div>

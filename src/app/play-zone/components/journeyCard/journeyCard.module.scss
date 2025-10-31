@@ -1,0 +1,30 @@
+@use "@styles/variables" as *;
+
+.journeyCard {
+  max-width: 47.625rem;
+  width: 100%;
+  border-radius: 2.25rem;
+  background: linear-gradient(103deg, #746add -10.44%, #9e8ee0 16.05%, #dcc2e4 54.74%, #fae3c6 90.74%);
+  padding: 1.12rem 2.5rem 2.5rem;
+}
+
+.achievement {
+  max-width: 12.8rem;
+  width: 100%;
+  position: relative;
+  left: -14px;
+}
+
+.totalScore {
+  max-width: 18.625rem;
+  width: 100%;
+  margin-top: 2.19rem;
+}
+
+.totalScoreLine {
+  margin-top: 0.8rem;
+}
+
+.totalScoreTitle {
+  color: $white;
+}
