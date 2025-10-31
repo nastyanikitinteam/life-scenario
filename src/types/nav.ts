@@ -1,5 +1,5 @@
-export interface NavItem {
+export type NavItem = {
   label: string;
   href: string;
   icon: React.ReactNode;
-}
+};

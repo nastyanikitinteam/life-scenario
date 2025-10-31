@@ -1,0 +1,143 @@
+@use "@styles/variables" as *;
+
+.statsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 26.6875rem;
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.statsItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 2.25rem;
+  background: linear-gradient(90deg, rgba(#dcc2e4, 0.2) 0%, rgba(#fadcb8, 0.2) 37.5%, rgba(#d6dcd2, 0.2) 100%);
+  padding: 0.75rem 0.75rem 1.62rem 0.75rem;
+
+  .icon {
+    margin-bottom: 0.6rem;
+  }
+
+  .info {
+    padding-left: 1rem;
+  }
+
+  .value {
+    color: $text-primary;
+    margin-bottom: 0.5rme;
+  }
+
+  .label {
+    color: $text-primary;
+    margin-top: 0.7rem;
+    letter-spacing: 0.25px;
+  }
+
+  .diff {
+    position: absolute;
+    top: 0.63rem;
+    right: 0.63rem;
+    color: #454660;
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .diffIcon {
+    position: absolute;
+    bottom: -0.31rem;
+    left: -0.31rem;
+  }
+
+  .positive {
+    background: rgba($accent-green, 0.2);
+  }
+
+  .negative {
+    background: rgba($accent-red, 0.2);
+  }
+}
+
+.traitList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.traitItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.56rem;
+  background: linear-gradient(90deg, rgba(#dcc2e4, 0.2) 0%, rgba(#fadcb8, 0.2) 37.5%, rgba(#d6dcd2, 0.2) 100%);
+  border-radius: 2.25rem;
+  padding: 1.13rem 2.3rem 1.12rem 1.12rem;
+}
+
+.traitInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  margin-right: auto;
+}
+
+.traitLabel {
+  color: $text-primary;
+}
+
+.traitTitle {
+  color: $text-primary;
+}
+
+.traitValue {
+  font-family: $font-family-secondary;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 100%;
+
+  &.red {
+    color: $accent-red;
+  }
+
+  &.blue {
+    color: $accent-blue;
+  }
+}
+
+.continueBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #a6dc39 0%, #6dc824 100%);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 16px 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
