@@ -6,6 +6,7 @@
   border-radius: 2.25rem;
   background: linear-gradient(103deg, #746add -10.44%, #9e8ee0 16.05%, #dcc2e4 54.74%, #fae3c6 90.74%);
   padding: 1.12rem 2.5rem 2.5rem;
+  position: relative;
 }
 
 .achievement {
@@ -27,4 +28,14 @@
 
 .totalScoreTitle {
   color: $white;
+  margin-top: 0.2rem;
+}
+
+.girl {
+  position: absolute;
+  right: -17%;
+  top: -9%;
+  max-width: 36.75rem;
+  width: 100%;
+  pointer-events: none;
 }

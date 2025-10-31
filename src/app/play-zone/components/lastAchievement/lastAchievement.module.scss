@@ -5,7 +5,9 @@
   align-items: stretch;
   max-width: 29.875rem;
   width: 100%;
-  margin-top: 2.88rem;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 .videoWrapper {

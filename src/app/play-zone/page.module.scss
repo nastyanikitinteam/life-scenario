@@ -1,6 +1,15 @@
+.page {
+  min-height: 100dvh;
+  overflow: hidden;
+  display: flex;
+}
+
 .container {
+  height: 100%;
   padding-top: 8.94rem;
+  padding-bottom: 4.44rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2.5rem;
 }

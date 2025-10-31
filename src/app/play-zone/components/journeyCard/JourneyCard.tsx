@@ -5,8 +5,9 @@ import LastAchievement from "../lastAchievement/LastAchievement";
 
 import LevelInfo from "../levelInfo/LevelInfo";
 
-import achievementImage from "@images/home/achievement.png";
+import achievementImage from "@images/home/achievement.svg?url";
 import totalScoreLineUrl from "@images/home/total.svg?url";
+import girlImage from "@images/home/girl.png";
 
 import styles from "./journeyCard.module.scss";
 
@@ -14,7 +15,7 @@ export default function JourneyCard() {
   return (
     <div className={styles.journeyCard}>
       <div className={styles.achievement}>
-        <Image src={achievementImage} alt="achievement" width={100} height={100} style={{ width: "100%", height: "auto" }} />
+        <Image src={achievementImage} alt="achievement" width={100} height={100} style={{ width: "100%", height: "auto" }} unoptimized />
       </div>
       <LevelInfo level={3} currentScore={364} maxScore={364 + 364} />
       <div className={styles.totalScore}>
@@ -30,6 +31,9 @@ export default function JourneyCard() {
         <h4 className={cn("title-h4", styles.totalScoreTitle)}>1758</h4>
       </div>
       <LastAchievement />
+      <div className={styles.girl}>
+        <Image src={girlImage} alt="girl" width={100} height={100} style={{ width: "100%", height: "auto" }} unoptimized />
+      </div>
     </div>
   );
 }
